@@ -8,7 +8,7 @@ export default function TodoInput(props){
             <input type="text" value={todoValue} onChange={(e)=>{
                 setTodoValue(e.target.value)
             }} placeholder="Enter a task"/>
-            <button type='submit' onClick={()=>{handleAddTodo(todoValue); setTodoValue(" ")}}>Add</button>
+            <button type='submit' onClick={()=>{handleAddTodo(todoValue); setTodoValue('')}}>Add</button>
        </header>
     )
 
